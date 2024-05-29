@@ -61,6 +61,22 @@
                     </tr>
                     <tr>
                         <th>
+                            {{ trans('cruds.gurudantenagakependidikan.fields.jenisgtk') }}
+                        </th>
+                        <td>
+                            {!! $gurudantenagakependidikan->jenisgtk !!}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.gurudantenagakependidikan.fields.hiredate') }}
+                        </th>
+                        <td>
+                            {!! $gurudantenagakependidikan->hiredate !!}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
                             {{ trans('cruds.gurudantenagakependidikan.fields.address') }}
                         </th>
                         <td>
@@ -81,14 +97,6 @@
                         </th>
                         <td>
                             {{ $gurudantenagakependidikan->email }}
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            {{ trans('cruds.gurudantenagakependidikan.fields.hiredate') }}
-                        </th>
-                        <td>
-                            {!! $gurudantenagakependidikan->hiredate !!}
                         </td>
                     </tr>
                 </tbody>

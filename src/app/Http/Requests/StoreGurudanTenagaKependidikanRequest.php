@@ -26,6 +26,14 @@ class StoreGurudanTenagaKependidikanRequest extends FormRequest
                 'date_format:' . config('panel.date_format'),
                 'required',
             ],
+            'jenisgtk' => [
+                'string',
+                'required',
+            ],
+            'hiredate' => [
+                'date_format:' . config('panel.date_format'),
+                'required',
+            ],
             'address' => [
                 'string',
                 'required',
@@ -33,10 +41,6 @@ class StoreGurudanTenagaKependidikanRequest extends FormRequest
             'phone' => [
             ],
             'email' => [
-            ],
-            'hiredate' => [
-                'date_format:' . config('panel.date_format'),
-                'required',
             ],
         ];
     }

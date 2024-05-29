@@ -38,6 +38,12 @@
                             {{ trans('cruds.gurudantenagakependidikan.fields.gender') }}
                         </th>
                         <th>
+                            {{ trans('cruds.gurudantenagakependidikan.fields.jenisgtk') }}
+                        </th>
+                        <th>
+                            {{ trans('cruds.gurudantenagakependidikan.fields.hiredate') }}
+                        </th>
+                        <th>
                             {{ trans('cruds.gurudantenagakependidikan.fields.address') }}
                         </th>
                         <th>
@@ -45,9 +51,6 @@
                         </th>
                         <th>
                             {{ trans('cruds.gurudantenagakependidikan.fields.email') }}
-                        </th>
-                        <th>
-                            {{ trans('cruds.gurudantenagakependidikan.fields.hiredate') }}
                         </th>
                         <th>
                             &nbsp;
@@ -80,6 +83,12 @@
                                 {{ $gurudantenagakependidikan->gender ?? '' }}
                             </td>
                             <td>
+                                {{ $gurudantenagakependidikan->jenisgtk ?? '' }}
+                            </td>
+                            <td>
+                                {{ $gurudantenagakependidikan->hiredate ?? '' }}
+                            </td>
+                            <td>
                                 {{ $gurudantenagakependidikan->address ?? '' }}
                             </td>
                             <td>
@@ -87,9 +96,6 @@
                             </td>
                             <td>
                                 {{ $gurudantenagakependidikan->email ?? '' }}
-                            </td>
-                            <td>
-                                {{ $gurudantenagakependidikan->hiredate ?? '' }}
                             </td>
                             <td>
                                 @can('gurudantenagakependidikan_show')

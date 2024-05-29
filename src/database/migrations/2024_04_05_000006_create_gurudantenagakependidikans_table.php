@@ -13,10 +13,11 @@ class CreateGurudanTenagaKependidikansTable extends Migration
             $table->string('fullname')->nullable();
             $table->date('dateofbirth')->nullable();
             $table->enum('gender', ['Laki-laki', 'Perempuan'])->nullable();
+            $table->date('hiredate')->nullable();
+            $table->string('jenisgtk')->nullable();
             $table->string('address')->nullable();
             $table->string('phone');
             $table->string('email');
-            $table->date('hiredate')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

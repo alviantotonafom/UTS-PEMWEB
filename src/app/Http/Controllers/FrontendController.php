@@ -10,8 +10,8 @@ class FrontendController extends Controller
 {
     public function index()
     {
-        $gurudantenagakependidikans = GurudanTenagaKependidikan::all();
+        $gurudantenagakependidikans = GurudanTenagaKependidikan::all(); 
         $jenisgtks = JenisGTK::all();
-        return view('frontend.index', compact('gurudantenagakependidikans', 'jenisgtks'));
+        return view('frontend.index', compact('gurudantenagakependidikans', 'jenisgtks',));
     }
 }
