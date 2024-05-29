@@ -68,16 +68,6 @@
                             </a>
                         </li>
                     @endcan
-                    @can('jenisgtk_access')
-                        <li class="c-sidebar-nav-item">
-                            <a href="{{ route("admin.jenisgtks.index") }}" class="c-sidebar-nav-link {{ request()->is("admin/jenisgtks") || request()->is("admin/jenisgtks/*") ? "c-active" : "" }}">
-                                <i class="fa-fw fas fa-chalkboard-teacher c-sidebar-nav-icon">
-
-                                </i>
-                                {{ trans('cruds.jenisgtk.title') }}
-                            </a>
-                        </li>
-                    @endcan
                 </ul>
             </li>
         @endcan

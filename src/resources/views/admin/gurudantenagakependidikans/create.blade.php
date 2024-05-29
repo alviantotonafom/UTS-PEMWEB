@@ -54,6 +54,26 @@
               <span class="help-block">{{ trans('cruds.gurudantenagakependidikan.fields.gender_helper') }}</span>
             </div>
             <div class="form-group">
+                <label class="required" for="jenisgtk">{{ trans('cruds.gurudantenagakependidikan.fields.jenisgtk') }}</label>
+                <input class="form-control {{ $errors->has('jenisgtk') ? 'is-invalid' : '' }}" type="text" name="jenisgtk" id="jenisgtk" value="{{ old('jenisgtk') }}">
+                @if($errors->has('hiredate'))
+                    <div class="invalid-feedback">
+                        {{ $errors->first('jenisgtk') }}
+                    </div>
+                @endif
+                <span class="help-block">{{ trans('cruds.gurudantenagakependidikan.fields.jenisgtk_helper') }}</span>
+            </div>
+            <div class="form-group">
+                <label class="required" for="hiredate">{{ trans('cruds.gurudantenagakependidikan.fields.hiredate') }}</label>
+                <input class="form-control datetimepicker {{ $errors->has('hiredate') ? 'is-invalid' : '' }}" type="text" name="hiredate" id="hiredate" value="{{ old('hiredate') }}">
+                @if($errors->has('hiredate'))
+                    <div class="invalid-feedback">
+                        {{ $errors->first('hiredate') }}
+                    </div>
+                @endif
+                <span class="help-block">{{ trans('cruds.gurudantenagakependidikan.fields.hiredate_helper') }}</span>
+            </div>
+            <div class="form-group">
                 <label class="required" for="address">{{ trans('cruds.gurudantenagakependidikan.fields.address') }}</label>
                 <input class="form-control {{ $errors->has('address') ? 'is-invalid' : '' }}" type="text" name="address" id="address" value="{{ old('address', '') }}" required>
                 @if($errors->has('address'))
@@ -82,16 +102,6 @@
                     </div>
                 @endif
                 <span class="help-block">{{ trans('cruds.gurudantenagakependidikan.fields.email_helper') }}</span>
-            </div>
-            <div class="form-group">
-                <label class="required" for="hiredate">{{ trans('cruds.gurudantenagakependidikan.fields.hiredate') }}</label>
-                <input class="form-control datetimepicker {{ $errors->has('hiredate') ? 'is-invalid' : '' }}" type="text" name="hiredate" id="hiredate" value="{{ old('hiredate') }}">
-                @if($errors->has('hiredate'))
-                    <div class="invalid-feedback">
-                        {{ $errors->first('hiredate') }}
-                    </div>
-                @endif
-                <span class="help-block">{{ trans('cruds.gurudantenagakependidikan.fields.hiredate_helper') }}</span>
             </div>
             <div class="form-group">
                 <button class="btn btn-danger" type="submit">
