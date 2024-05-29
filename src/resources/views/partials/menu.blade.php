@@ -142,7 +142,7 @@
             </li>
         @endcan
         @can('dataInduk_access')
-            <li class="c-sidebar-nav-dropdown {{ request()->is("admin/tables*") ? "c-show" : "" }} {{ request()->is("admin/bookings*") ? "c-show" : "" }} {{ request()->is("admin/prices*") ? "c-show" : "" }} {{ request()->is("admin/products*") ? "c-show" : "" }}">
+            <li class="c-sidebar-nav-dropdown {{ request()->is("admin/gurudantenagakependidikans*") ? "c-show" : "" }} {{ request()->is("admin/jenisgtks*") ? "c-show" : "" }}">
                 <a class="c-sidebar-nav-dropdown-toggle" href="#">
                     <i class="fa-fw fa fa-university c-sidebar-nav-icon">
 
